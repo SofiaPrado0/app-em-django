@@ -20,6 +20,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
 # http://127.0.0.1:8000/polls/ < copia e cola no navegador
 #http://127.0.0.1:8000/admin/

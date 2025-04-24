@@ -1,10 +1,26 @@
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Votações</title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Votações</h1>
 
+        {% if latest_question_list %}
+            <ul class="question-list">
+                {% for question in latest_question_list %}
+                    <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="no-polls">Nenhuma votação disponível.</p>
+        {% endif %}
+
+        <img src="https://i.pinimg.com/736x/81/63/82/816382e792d35df3a53cde1f459b6af4.jpg" alt="Imagem engraçada" class="img-mascote">
+    </div>
+</body>
+</html>

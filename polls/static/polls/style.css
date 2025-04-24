@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffbe6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fefadd;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #e4d63f55;
+    text-align: center;
+}
+
+h1 {
+    color: #e4d63f;
+    margin-bottom: 20px;
+}
+
+.question-list {
+    list-style: none;
+    padding: 0;
+}
+
+.question-list li {
+    margin: 15px 0;
+    background-color: #f6ec82;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.question-list li:hover {
+    background-color: #e4d63f;
+}
+
+.question-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.img-mascote {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e4d63f77;
+}
+
+.no-polls {
+    color: #888;
+    font-style: italic;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.choices {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.choices li {
+    margin: 10px 0;
+    background-color: #f6ec82;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.choices input[type="radio"] {
+    margin-right: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-vote {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f6ec82;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-vote:hover {
+    background-color: #e4d63f;
+}
+
+.results {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.results li {
+    background-color: #f6ec82;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 0 5px #e4d63f44;
+}
+
+.vote-again {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 15px;
+    background-color: #e4d63f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.vote-again:hover {
+    background-color: #c9bc35;
+}
